@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+         <section class="premier">
+            <div class="premier__container">
+               <div class="premier__tilte">Premier dog boarding, daycare & day spa</div>
+               <button type="submit" class="button">Make an Appointment</button>
+            </div>
+         </section>
+         <section class="about">
+            <div class="about__container">
+               <div class="about__content content-about">
+                  <div class="content-about__label _icon-mark_white">Who we are</div>
+                  <div class="content-about__title">Nemo enim ipsam voluptatem quia voluptas in proident</div>
+                  <div class="content-about__text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                     suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure
+                     reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui
+                     dolorem eum fugiat quo voluptas nulla pariatur.</div>
+               </div>
+               <div class="board">
+                  <div class="content-about__art -ibg">
+                     <img src="@img/about/view.png" alt="#">
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="promise">
+            <div class="promise__container">
+               <div class="promise__info info-promise">
+                  <div class="info-promise__title _icon-mark_blue">OUR PROMISE TO YOU</div>
+                  <div class="info-promise__subtitle">Sed perspiciatis omnis iste natus</div>
+               </div>
+               <div class="promise__items">
+                  <article class="promise__item item-promise">
+                     <div class="item-promise__art">
+                        <img src="@img/promise/1.svg" alt="#">
+                     </div>
+                     <div class="item-promise__body">
+                        <div class="item-promise__title">24/7 Love & Care</div>
+                        <div class="item-promise__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                           blanditiis praesentium corrupti quos dolores et quas.</div>
+                     </div>
+                  </article>
+                  <article class="promise__item item-promise">
+                     <div class="item-promise__art">
+                        <img src="@img/promise/2.svg" alt="#">
+                     </div>
+                     <div class="item-promise__body">
+                        <div class="item-promise__title">On-site Veterinarian</div>
+                        <div class="item-promise__text">Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                           sed quia non numquam eius modi tempora incidunt.</div>
+                     </div>
+                  </article>
+                  <article class="promise__item item-promise">
+                     <div class="item-promise__art">
+                        <img src="@img/promise/3.svg" alt="#">
+                     </div>
+                     <div class="item-promise__body">
+                        <div class="item-promise__title">Live-stream Cameras</div>
+                        <div class="item-promise__text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+                           esse quam nihil molestiae consequatur illum.</div>
+                     </div>
+                  </article>
+               </div>
+
+            </div>
+         </section>
+         <section class="point">
+            <div class="point__container">
+               <div class="point__items">
+                  <div class="point__item">
+                     <img src="@img/point/dog.png" alt="#">
+                  </div>
+                  <div class="point__item">
+                     <div class="point__content">
+                        <div class="point__text">Nemo enim ipsam voluptatem quia voluptas in proident</div>
+                        <button type="submit" class="button">Make an Appointment</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/_footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

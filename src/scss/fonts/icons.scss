@@ -1,0 +1,70 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[class*="_icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+._icon-email:before {
+   content: "\e900";
+   color: #f2726f;
+ }
+ ._icon-facebook:before {
+   content: "\e901";
+   color: #f2726f;
+ }
+ ._icon-instagram:before {
+   content: "\e902";
+   color: #f2726f;
+ }
+ ._icon-mark_blue:before {
+   content: "\e903";
+   color: #5d62b5;
+ }
+ ._icon-mark_white:before {
+   content: "\e904";
+   color: #fff;
+ }
+ ._icon-phone:before {
+   content: "\e905";
+   color: #f2726f;
+ }
+ ._icon-place:before {
+   content: "\e906";
+   color: #f2726f;
+ }
+ ._icon-smartphone:before {
+   content: "\e907";
+   color: #f2726f;
+ }
+ ._icon-time:before {
+   content: "\e908";
+   color: #f2726f;
+ }
+ ._icon-timer:before {
+   content: "\e909";
+   color: #f2726f;
+ }
+ ._icon-twitter:before {
+   content: "\e90a";
+   color: #f2726f;
+ }
+ ._icon-vector:before {
+   content: "\e90b";
+   color: #f2726f;
+ }
+ ._icon-youtube:before {
+   content: "\e90c";
+   color: #f2726f;
+ }
+ 

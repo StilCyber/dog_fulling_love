@@ -10,7 +10,8 @@
    position: relative;
    border-radius: 40px;
    position: relative; 
-   @include adaptiveValue("padding-bottom", 354, 20); 
+   @include adaptiveValue("padding-bottom", 354, 20);
+    
    &:not(:last-child) {
       margin-bottom: 0;
    }
@@ -18,14 +19,16 @@
       &::before {
          content:'';
          bottom: 0%; 
-         left: -7%;
+         left: -5%;
          width: 100%;  
-         padding-top: 42%;   
-         //height: 75%;    
+         padding-top: 42%;      
          position: absolute;
          background: url('@img/about/blob_blue.png') 0 0 / cover no-repeat;
          } 
       } 
+      @media (max-width: em(592)) {
+         @include adaptiveValue("padding-bottom", 30, 10);
+      }
    
 
 
@@ -63,15 +66,15 @@
       color: #F5F5F5; 
       margin-bottom: em(36);
       @include adaptiveValue("font-size", 16, 14); 
+      opacity: 0.99;
+      z-index: 2;
    } 
   
    &__art { 
       padding-bottom: 42%;  
-      transform: translate(0, -0%);  
       @media (max-width: em(592)) {
          display: none;
       }  
-      //margin-top: -50%;   
       img {  
          border-radius: 40px;   
       }
@@ -98,6 +101,9 @@
       text-transform: uppercase;
       color: #5D62B5;
       margin-bottom: em(33);
+      &_white {
+         color: #fff;
+      }
       &::before{
          position: absolute;
          font-size: rem(30);
@@ -112,5 +118,11 @@
       color: #000000;
       max-width: 600px;
       @include adaptiveValue("margin-bottom", 68, 32);
+      &_black {
+         color: #000;
+      }
+      &_white {
+         color: #fff;
+      }
    }
 }

@@ -22,6 +22,8 @@
  ._icon-facebook:before {
    content: "\e901";
    color: #f2726f;
+   font-size: 24px;
+   transform: translate(0, 10%);
  }
  ._icon-instagram:before {
    content: "\e902";
@@ -58,6 +60,8 @@
  ._icon-twitter:before {
    content: "\e90a";
    color: #f2726f;
+   font-size: 16px;
+   transform: translate(0, 20%);
  }
  ._icon-vector:before {
    content: "\e90b";

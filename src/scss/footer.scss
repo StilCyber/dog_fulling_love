@@ -1,3 +1,157 @@
 //====================================================================================================
 
 //====================================================================================================
+
+.footer {
+
+   &__container {
+      @include adaptiveValue("margin-top", 160, 60);
+      @include adaptiveValue("margin-bottom", 98, 40);
+   }
+
+   &__items {
+      display: flex;
+      margin: 0 -24px;
+      row-gap: 22px;
+      @media (max-width: $mobile) {
+         flex-wrap: wrap;
+         justify-content: center;
+         margin: 0 -24px;
+      }
+   }
+
+   &__item {
+      padding: 24px;
+      @media (min-width: $mobile) {
+         flex: 0 1 33.333%;
+      }
+      @media (max-width: $mobile) {
+         flex: 0 1 50%;
+         padding: 0 24px;
+      }
+
+   }
+
+   &__logo {
+      display: flex;
+      margin-bottom: em(15);
+      img {
+         width: 40px;
+         height: 40px;
+      }
+   }
+
+   &__caption {
+      align-self: center;
+      padding-left: 12px;
+      color: #4B4B4B;
+      @include adaptiveValue("font-size", 22, 18);
+      font-weight: 700;
+   }
+
+   &__text {
+      font-size: rem(14);
+      line-height: 157%;
+      letter-spacing: em(0.15);
+      color: #4B4B4B;
+      margin-bottom: em(33);
+      max-width: rem(250);
+   }
+
+   &__icons {
+      font-size: rem(22);
+      display: flex;
+      //align-items: center;
+      column-gap: 18px;
+      transition: 0.3s;
+      
+   }
+   &__icon {
+      transition: 0.3s;
+      &:hover {
+         transform: scale(1.3);
+      }
+      
+   }
+
+   &_first {
+      &:last-child{
+         margin-bottom: 0;
+      }
+   }
+   &_two {
+      font-weight: 700;
+      font-size: rem(14);
+      letter-spacing: em(0.15);
+      color: #4B4B4B;
+   }
+
+   &__title {
+      text-transform: uppercase;
+      min-height: em(74);
+      padding-top: 17px;
+   }
+
+   &__link {
+      display: flex;
+      margin: 0 -24px;
+   }
+
+   &__connect {
+      flex: 0 1 50%;
+      padding: 0 24px;
+      & :not(:last-child) {
+         margin-bottom: em(20);
+      }
+   }
+   &__string {
+      line-height: 157%;
+      letter-spacing: em(0.15);
+   }
+   &__info {
+      display: block;
+      transition: 0.3s;
+      &:hover {
+         color: #F2726F;
+      }
+   }
+
+   &__contact {
+      font-size: rem(14);
+      line-height: 143%;
+      letter-spacing: em(0.15);
+      color: #4B4B4B;
+      max-width: rem(200);
+      & :not(:last-child) {
+         margin-bottom: em(16);
+      }
+   }
+
+
+   &__place {
+   }
+
+   &__tel {
+   }
+
+   &__mail {
+   }
+
+   &__time {
+   }
+   
+   &__place,
+   &__tel,
+   &__mail,
+   &__time {
+      padding-left: rem(32);
+      position: relative;
+      
+      &::before {
+         position: absolute;
+         font-size: rem(20);
+         left: 0px;
+      }
+   }
+}
+

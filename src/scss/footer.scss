@@ -5,7 +5,6 @@
 .footer {
 
    &__container {
-      @include adaptiveValue("margin-top", 160, 60);
       @include adaptiveValue("margin-bottom", 98, 40);
    }
 
@@ -155,3 +154,67 @@
    }
 }
 
+// bottom
+
+.bottom {
+   background: #5D62B5;
+
+   &__container {
+      @media (min-width: $tablet) {
+
+      }
+
+      &_last {
+         max-width: rem(1540);
+         margin: 0px auto;
+         padding-top: 23px;
+         padding-bottom: 18px;
+         font-size: rem(12);
+         line-height: 150%;
+         letter-spacing: 0.15px em(0.15);
+         color: #fff;
+         display: flex;
+         justify-content: space-between;
+         column-gap: 24px;
+         @media (max-width: $mobile) {
+            flex-direction: column;
+            row-gap: 12px;
+            align-items: center;
+            text-align: center;
+         }
+      }
+   }
+
+   &__text {
+      @media (min-width: $mobile) {
+         flex: 0 1 527px;
+      }
+   }
+
+   &__info {
+   }
+
+   &__conpany {
+      display: inline-block;
+      padding-right: em(10);
+   }
+
+   &__policy {
+      font-weight: 700;
+   }
+
+   &__pipeline {
+      font-weight: 700;
+   }
+
+   &__terms {
+      font-weight: 700;
+   }
+   &__policy,
+   &__terms {
+      transition: 0.3s;
+      &:hover {
+         color: #F2726F;
+      }
+   }
+}

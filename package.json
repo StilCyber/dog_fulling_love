@@ -68,6 +68,7 @@
 		"webpack-stream": "latest"
 	},
 	"dependencies": {
+		"sass-ffi": "^0.0.2",
 		"simplebar": "latest"
 	}
 }

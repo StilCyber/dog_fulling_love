@@ -37,5 +37,6 @@ if (prop) {
 
 const blockTop = document.querySelector('.footer__container');
 if (blockTop) {
-   blockTop.style.setProperty("padding-top",  barHeigth);
+   blockTop.style.setProperty("padding-top", barHeigth);
 };
+

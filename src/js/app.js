@@ -35,9 +35,9 @@ flsFunctions.isWebp();
 /* Добавление loaded для HTML после полной загрузки страницы */
 // flsFunctions.addLoadedClass();
 /* Модуль для работы с меню (Бургер) */
-//flsFunctions.menuInit();
+// flsFunctions.menuInit();
 /* Учет плавающей панели на мобильных устройствах при 100vh */
-//flsFunctions.fullVHfix();
+// flsFunctions.fullVHfix();
 
 /*
 Модуль работы со спойлерами
@@ -152,10 +152,10 @@ import * as flsScroll from "./files/scroll/scroll.js";
 // flsScroll.scrollWatcher();
 
 // Плавная навигация по странице
-// flsScroll.pageNavigation();
+flsScroll.pageNavigation();
 
 // Функционал добавления классов к хедеру при прокрутке
-// flsScroll.headerScroll();
+flsScroll.headerScroll();
 
 // Функционал липкого блока
 // flsScroll.stickyBlock();

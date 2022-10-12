@@ -30,7 +30,12 @@
          @include adaptiveValue("padding-bottom", 30, 10);
       }
    
-
+      &_gallery {
+         &::before {
+             
+            display: none;
+         }
+      }
 
    &__label {
       padding-left: rem(30);
@@ -126,3 +131,41 @@
       }
    }
 }
+
+
+// ====== for js
+
+
+._header-scroll {
+
+   opacity: 0;
+   visibility: hidden;
+   cursor: none;
+
+
+      @media (min-width: $mobile) {
+         & * .header__nav {
+
+            visibility: hidden;
+            max-height: 0px;
+   
+         }
+      }
+
+   }
+._header-show {
+
+   opacity: 1;
+
+   background: rgba($color: #25CEC9 , $alpha: 0.5);
+
+   visibility: visible;
+ 
+   @media (min-width: $mobile) {
+      & * .header__nav {
+         visibility: hidden;
+      }  
+   }
+
+}
+

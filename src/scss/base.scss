@@ -133,8 +133,12 @@
    opacity: 0;
    transition: all 0.8s ease 0s;
 }
+._anim-show__key {
+   transform: translate(-120%, 0);
+}
 
 ._anim-show._active,
+._anim-show__key._active,
 ._active {
    opacity: 1;
    transform: translate(0px, 0px);

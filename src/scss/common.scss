@@ -6,10 +6,11 @@
    @include adaptiveValue("padding-top", 100, 50);
    @include adaptiveValue("padding-left", 87, 15);
    @include adaptiveValue("padding-right", 87, 15);
-   background: #5D62B5;
+   background: rgba($color: #8a9294, $alpha: 0.8);
    position: relative;
    border-radius: 40px;
    position: relative; 
+   z-index: 3;
    @include adaptiveValue("padding-bottom", 354, 20);
     
    &:not(:last-child) {
@@ -19,11 +20,11 @@
       &::before {
          content:'';
          bottom: 0%; 
-         left: -5%;
-         width: 100%;  
+         left: 0%;
+         width: 100%; 
          padding-top: 42%;      
          position: absolute;
-         background: url('@img/about/blob_blue.png') 0 0 / cover no-repeat;
+         background: url('@img/about/blob.png') 0 0 / cover no-repeat;
          } 
       } 
       @media (max-width: em(592)) {
@@ -46,10 +47,12 @@
       text-transform: uppercase;
       color: #F5F5F5;
       margin-bottom: em(33);
+      position: relative;
       &::before{
          position: absolute;
          font-size: rem(30);
-         transform: translate(rem(-35), rem(-3));
+         top: -4px;
+         left: -5px;
          
       }
    }
@@ -77,6 +80,7 @@
   
    &__art { 
       padding-bottom: 42%;  
+      z-index: 4;
       @media (max-width: em(592)) {
          display: none;
       }  
@@ -95,24 +99,28 @@
 //=========== заголовки
 
 .info-promise {
-
+   //position: relative;
    &__title {
       position: relative;
       font-weight: 700;
       padding-left: rem(35);
-      font-size: rem(12);
+      font-size: rem(16);
       line-height: 200%;
       letter-spacing: rem(2.5);
       text-transform: uppercase;
-      color: #5D62B5;
+      color: #8a9294;
       margin-bottom: em(33);
-      &_white {
-         color: #fff;
-      }
-      &::before{
+
+      &::before {
          position: absolute;
          font-size: rem(30);
-         transform: translate(rem(-35), rem(-3));
+         top: -1px;
+         left: -5px;
+         color: #8a9294;
+
+      }
+      &_white {
+         color: #fff;
       }
    }
 
@@ -122,6 +130,7 @@
       line-height: 117%;
       color: #000000;
       max-width: 600px;
+      color: #000;
       @include adaptiveValue("margin-bottom", 68, 32);
       &_black {
          color: #000;
@@ -140,7 +149,8 @@
 
    opacity: 0;
    visibility: hidden;
-   cursor: none;
+
+
 
 
       @media (min-width: $mobile) {
@@ -157,15 +167,17 @@
 
    opacity: 1;
 
+
+
    background: rgba($color: #25CEC9 , $alpha: 0.5);
 
-   visibility: visible;
+   visibility: visible;     
  
    @media (min-width: $mobile) {
       & * .header__nav {
-         visibility: hidden;
-      }  
+         visibility: hidden; 
+      }   
    }
 
-}
+}   
 
